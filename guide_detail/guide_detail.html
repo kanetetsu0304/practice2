@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+  	<script src="../js/script.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#header").load("../include/header.html");
+        })
+    </script>
+</head>
+
+<body>
+  <header id="header">
+      <!--ここに header.htmlが読み込まれる-->
+  </header>
+
+  <section id="guide_detail">
+   <h1 class="guide_detail_intro">ご利用ガイド</h1>
+    <div class="all_guide_detail_container">
+      <div class="guide_detail_container">
+        <p class="guide_detail_menu">1.左メニューの＋アイコンからプロジェクトを作成する</p>
+        <textarea name="comment" cols="38" rows="11"  height="280"></textarea>
+      </div>
+      <div class="guide_detail_container">
+        <p class="guide_detail_menu">2.各種項目を入力する</p>
+        <textarea name="comment" cols="38" rows="11"  height="280"></textarea>
+      </div>
+      <p class="guide_detail_text">
+・プロジェクト名<br>
+・プロジェクトアイコンの設定<br>
+　自身の画像をアップロードも可能<br>
+・概要（フリーワード）<br>
+・作業期限<br>
+　プロジェクト自体の期限があれば設定。<br>
+・1日の作業時間<br>
+　TT有タスクの工数計算つまり日数計算に利用される。<br>
+  例. 8hと設定されていたら1日と表示する。<br>
+・レビュー<br>
+  タスク登録時にデフォルトのオプション設定をここで設定できる。<br>
+　担当者がタスクを完了させた場合に指定されたレビュアーに、レビュー（タスクが完了できているかの確認）を依頼できる機能。<br>
+・タイムトラッキング<br>
+  タスク登録時にデフォルトのオプション設定をここで設定できる。<br>
+  設定した場合は、タスクに作業予定の工数を設定でき、タスク開始時は作業時間が計測されるようになり、より時間を意識して作業を行える。<br>
+・メンバー<br>
+  プロジェクトに参加させるメンバーを選択する。　★段階的な表示制限を記載<br>
+・タスク工数<br>
+  初期段階では意味がない表示。<br>
+  タスクが登録されていくと完了までに何日かかるかの目安を自動算出する。
+   </p>
+ </div>
+      <div class="teamhackbottom_btn"><a href="../guide/guide.html">もどる</a></div>
+
+  </section>
+
+  <footer>
+    <div class="footer_img">
+      <a href="../index.html"><img src="../img/logo.png"></a>
+    </div>
+    <ul class="footer_nav">
+      <li><a href="../plan/plan.html">プラン</a></li>
+      <li><a href="../guide/guide.html">ご利用ガイド</a></li>
+      <li><a href="../contact/contact.html">お問い合わせ</a></li>
+      <li><a href="../inquiry/inquiry.html">会社概要</a></li>
+      <li><a href="../terms/terms.html">利用規約</a></li>
+      <li><a href="../privacy/privacy.html">プライバシーポリシー</a></li>
+    </ul>
+    <div class="copyright">
+      <p>Copyright © 2018 <br class="sp">Catalyst System, Inc. All Rights Reserved.</p>
+    </div>
+  </footer>

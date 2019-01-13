@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+  	<script src="../js/script.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#header").load("../include/header.html");
+        })
+    </script>
+</head>
+
+<body>
+  <header id="header">
+      <!--ここに header.htmlが読み込まれる-->
+  </header>
+
+  <section id="contact">
+   <h1 class="contact_intro">お問い合わせ</h1>
+   <p class="contact_ex">この度は、TeamHackにご関心を持ってくださりありがとうございます。
+      <br>ご質問・ご要望など、下記のフォームよりお送りください。担当者が確認次第、折り返しお返事させていただきます。
+    </p>
+      <div class="contact_container">
+        <p class="contact_menu">お名前<span>*</span></p>
+        <input type="text" name="text" class="contact_textarea">
+      </div>
+      <div class="contact_container">
+        <p class="contact_menu">会社名<span></span></p>
+        <input type="text" name="text" class="contact_textarea" class="contact_textarea">
+      </div>
+      <div class="contact_container">
+        <p class="contact_menu">メールアドレス<span>*</span></p>
+        <input type="email" name="email" class="contact_textarea" class="contact_textarea">
+      </div>
+      <div class="contact_container">
+        <p class="contact_menu">お問い合わせ理由<span>*</span></p>
+        <select name="contact" class="contact_textarea" size="1">
+          <option value="サンプル1">選択してください</option>
+          <option value="サンプル2">もっと詳しく知りたい</option>
+          <option value="サンプル3">サービスを利用したい</option>
+          <option value="サンプル5">その他のお問い合わせ</option>
+        </select>
+      </div>
+      <div class="contact_container">
+        <p class="contact_menu">お問い合わせ内容<span>*</span></p>
+        <textarea name="comment" cols="38" rows="11"  height="280"></textarea>
+      </div>
+      <div class="teamhackbottom_btn"><a href="">送信</a></div>
+
+  </section>
+
+  <footer>
+    <div class="footer_img">
+      <a href="../index.html"><img src="../img/logo.png"></a>
+    </div>
+    <ul class="footer_nav">
+      <li><a href="../plan/plan.html">プラン</a></li>
+      <li><a href="../guide/guide.html">ご利用ガイド</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="../inquiry/inquiry.html">会社概要</a></li>
+      <li><a href="../terms/terms.html">利用規約</a></li>
+      <li><a href="../privacy/privacy.html">プライバシーポリシー</a></li>
+    </ul>
+    <div class="copyright">
+      <p>Copyright © 2018 <br class="sp">Catalyst System, Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
